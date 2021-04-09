@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Desafio 1 - Bootcamp Fullstack IGTI</title>
+</head>
+<body>
+  <div class="flex flex-col py-3 app">
+    <h1 class="text-2xl font-bold my-2">Números por extenso</h1>
+    <label for="inputUserNumber">Escolha um número de 0 a 999</label>
+    <input type="range" id="inputUserNumber" min="0" max="999" value="0"/>
+  
+    <label class="my-2" for="inputCurrentNumber">Número atual</label>
+    <input class="px-3 py-1" type="text" id="inputCurrentNumber" value="0" disabled>
+  
+    <label class="my-2" for="inputSpellingNumber">Número por extenso</label>
+    <input class="px-3 py-1" type="text" id="inputSpellingNumber" value="zero" disabled>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
